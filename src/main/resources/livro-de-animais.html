@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>BibliotecaApp - Livros de Animais</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Estilo personalizado para o footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      margin-bottom: 100px; /* Espaço extra na parte inferior do conteúdo principal */
+    }
+    .footer {
+      background-color: #F5F5DC; /* Cor de fundo mais clara */
+    }
+    .footer a {
+      color: #000000; /* Cor do texto dos links */
+    }
+    .book-cover {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+      float: left;
+    }
+    .book-details {
+      overflow: hidden; /* Para manter os detalhes do livro dentro da div */
+    }
+    .book-details p {
+      margin-bottom: 5px; /* Adiciona espaço entre os parágrafos */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">BibliotecaApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usuarios.html">Usuários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funcionarios.html">Funcionários</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Livros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Livros de animais</a>
+            <a class="dropdown-item" href="#">Livros de esportes</a>
+            <a class="dropdown-item" href="#">Livros didáticos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bibliotecas.html">Bibliotecas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container mt-5 content">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-left mb-4">Livros de Animais</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/71IIZESq-uL._AC._SR360,460.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>A Origem das Espécies</h6>
+            <p>Autor: Charles Darwin</p>
+            <p>Ano de Publicação: 2018</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/81fS2wADW9L._AC_UL480_QL65_.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>Patrimônio Paleontológico</h6>
+            <p>Autor: Maria Somália Sales Viana</p>
+            <p>Ano de Publicação: 2019</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/71OY7MnvQ4L._SY466_.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>Mundo Animal - Animais Brasileiros: K12</h6>
+            <p>Autor: Camelot Editora</p>
+            <p>Ano de Publicação: 2021</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/61KPeaDczGL._AC_UY327_FMwebp_QL65_.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>Epaminondas: O gato explicador</h6>
+            <p>Autor: Clóvis de Barros Filho</p>
+            <p>Ano de Publicação: 2022</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/51CE-Tw-S7L._SY445_SX342_.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>Mundo Animal</h6>
+            <p>Autor: Geneviève Warnau</p>
+            <p>Ano de Publicação: 2019</p>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="https://m.media-amazon.com/images/I/819QnfXHbiL._AC_UY327_FMwebp_QL65_.jpg" alt="Capa do livro" class="book-cover">
+          <div class="book-details">
+            <h6>Tudo Sobre Dinossauros - POP</h6>
+            <p>Autor: Ben Hubbard</p>
+            <p>Ano de Publicação: 2020</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/leonardomunijz/MeuProjetoJavaAT" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png" alt="GitHub" width="30" height="30"></a><br>
+    <p>&copy; 2024 BibliotecaApp. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>

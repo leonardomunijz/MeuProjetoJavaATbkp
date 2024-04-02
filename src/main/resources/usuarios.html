@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>BibliotecaApp - Usuários</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Estilo personalizado para o footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      margin-bottom: 100px; /* Espaço extra na parte inferior do conteúdo principal */
+    }
+    .footer {
+      background-color: #F5F5DC; /* Cor de fundo mais clara */
+    }
+    .footer a {
+      color: #000000; /* Cor do texto dos links */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">BibliotecaApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Usuários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funcionarios.html">Funcionários</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Livros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="livro-de-animais.html">Livros de animais</a>
+            <a class="dropdown-item" href="#">Livros de esportes</a>
+            <a class="dropdown-item" href="#">Livros didáticos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bibliotecas.html">Bibliotecas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container mt-5 content">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h3 class="text-center mb-4">Página de Usuários</h3>
+      <p class="text-justify">Esta é a página de usuários da BibliotecaApp. Aqui você pode adicionar, remover e editar informações dos usuários cadastrados.</p>
+
+      <h4>Como usar esta página:</h4>
+      <p class="text-justify">Para adicionar um novo usuário, clique no botão "Adicionar Usuário" e preencha o formulário com as informações necessárias. Para editar ou remover um usuário existente, clique no nome do usuário na lista e escolha a opção desejada.</p>
+
+      <h4>Lista de Usuários:</h4>
+
+      <form id="addUserForm">
+        <div class="form-group">
+          <label for="nomeUsuario">Nome do Usuário:</label>
+          <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario">
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar Usuário</button>
+      </form>
+      <ul class="list-group">
+        <li class="list-group-item text-justify">Usuário 1</li>
+        <li class="list-group-item text-justify">Usuário 2</li>
+        <li class="list-group-item text-justify">Usuário 3</li>
+        <li class="list-group-item text-justify">Usuário 4</li>
+        <li class="list-group-item text-justify">Usuário 5</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/leonardomunijz/MeuProjetoJavaAT" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png" alt="GitHub" width="30" height="30"></a><br>
+    <p>&copy; 2024 BibliotecaApp. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- Adicione o script do Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

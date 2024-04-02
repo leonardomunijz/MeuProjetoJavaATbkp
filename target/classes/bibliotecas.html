@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>BibliotecaApp - Bibliotecas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Estilo personalizado para o footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      margin-bottom: 100px; /* Espaço extra na parte inferior do conteúdo principal */
+    }
+    .footer {
+      background-color: #F5F5DC; /* Cor de fundo mais clara */
+    }
+    .footer a {
+      color: #000000; /* Cor do texto dos links */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">BibliotecaApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usuarios.html">Usuários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funcionarios.html">Funcionários</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Livros
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="livro-de-animais.html">Livros de animais</a>
+            <a class="dropdown-item" href="#">Livros de esportes</a>
+            <a class="dropdown-item" href="#">Livros didáticos</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Bibliotecas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container mt-5 content">
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="text-left mb-4">Lista de Bibliotecas</h3>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h5>Biblioteca Central</h5>
+          <p>Endereço: Rua Principal, 123 - Centro</p>
+        </li>
+        <li class="list-group-item">
+          <h5>Biblioteca do Conhecimento</h5>
+          <p>Endereço: Avenida da Sabedoria, 456 - Bairro Universitário</p>
+        </li>
+        <li class="list-group-item">
+          <h5>Biblioteca da Cidade</h5>
+          <p>Endereço: Praça das Artes, 789 - Centro Histórico</p>
+        </li>
+        <li class="list-group-item">
+          <h5>Biblioteca da Comunidade</h5>
+          <p>Endereço: Rua das Pessoas, 987 - Bairro Comunitário</p>
+        </li>
+        <li class="list-group-item">
+          <h5>Biblioteca Infantil</h5>
+          <p>Endereço: Avenida dos Sonhos, 654 - Bairro das Crianças</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.5464471442745!2d-51.92522528489069!3d-23.48273248475927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce32623664aeb%3A0x9e9c75c527aa590d!2sPra%C3%A7a%20das%20Artes%2C%20789%20-%20Centro%20Hist%C3%B3rico%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001100-000!5e0!3m2!1spt-BR!2sbr!4v1648963568391!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/leonardomunijz/MeuProjetoJavaAT" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png" alt="GitHub" width="30" height="30"></a><br>
+    <p>&copy; 2024 BibliotecaApp. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
